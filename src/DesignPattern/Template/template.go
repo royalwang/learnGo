@@ -23,7 +23,7 @@ func (a *Abclass) Dosports() { //抽象模板中的具体方法
 }
 
 type Conclass1 struct {
-	Abclass
+	//Abclass
 }
 
 func (c *Conclass1) run() { //具体实现方法
@@ -35,7 +35,7 @@ func (c *Conclass1) jump() { //具体实现方法
 }
 
 type Conclass2 struct {
-	Abclass
+	//Abclass
 }
 
 func (c *Conclass2) run() { //具体实现方法
