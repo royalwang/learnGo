@@ -8,6 +8,7 @@ import (
 //如将用两个不同的基类Componet1,Componet2继承Componet
 //让leaf继承Componet1，Composite继承Componet2
 //从而对leaf 和 Composite的一些独有行为进行定义
+//參考Composite2
 type Componet interface {
 	add(Componet)
 	remove(Componet)
