@@ -1,6 +1,6 @@
 package main
 
-//由于不能像其他面向对象语言定义类时那样自持有，所以只能将结构和方法分开抽象
+//将结构和方法分开抽象
 import (
 	"fmt"
 )
@@ -9,7 +9,7 @@ type HandlerAbstractMethod interface { //职责方法抽象
 	handleRequest()
 }
 
-type handler struct { //职责结构抽象
+type handler struct { //职责结构抽象,未定义调用规则
 	next HandlerAbstractMethod
 }
 
@@ -50,6 +50,6 @@ func main() {
 
 	c1.setNext(c2)
 	c2.setNext(c3)
-	
+
 	c1.handleRequest()
 }
